@@ -47,7 +47,8 @@ export default Union({
     }
   },
   Started: Upload => class extends Upload {
-    progress(progress) {
+    progress({ lengthComputable, loaded, total }) {
+      let progress = { lengthComputable, loaded, total };
       return this.toStarted({ progress });
     }
 

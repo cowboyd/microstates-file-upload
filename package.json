@@ -2,8 +2,9 @@
   "name": "upload",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
-    "microstates": "^0.12.4",
+    "microstates": "^0.13.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3"
