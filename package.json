@@ -5,12 +5,13 @@
   "license": "MIT",
   "dependencies": {
     "microstates": "^0.13.0",
+    "@microstates/union": "cowboyd/microstates-union#git-installable",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=4200 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,4 +1,4 @@
-import Upload from '../upload';
+import Upload from '../states/upload';
 
 describe('Creating an Upload', ()=> {
   let upload;
@@ -54,9 +54,13 @@ describe('Creating an Upload', ()=> {
     describe('finishing', ()=> {
       let finished;
       beforeEach(()=> {
-        finished = started.finish({
-          response: {hello: 'world'},
-          responseType: 'application/json'
+        return new Promise((resolve, reject) => {
+          setTimeout(() => resolve(), 2);
+        }).then(() => {
+          finished = started.finish({
+            response: { hello: 'world' },
+            responseType: 'application/json'
+          });
         });
       });
       it('has a non-zero runtime', ()=> {

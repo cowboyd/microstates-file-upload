@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import Store from './store'
-import Uploader from './uploader';
-import UploaderController from './uploader-controller';
+import Uploader from './states/uploader';
+import UploaderController from './effects/uploader-controller';
 import { valueOf } from 'microstates';
 import { append } from 'funcadelic';
 

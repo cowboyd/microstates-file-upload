@@ -1,4 +1,4 @@
-import Union from './union';
+import Union from '@microstates/union';
 
 class Upload {
 
